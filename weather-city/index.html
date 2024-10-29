@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html
+  lang="fa"
+  dir="rtl"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>اطلاعات آب و هوا</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white shadow-lg rounded-lg p-6 w-96">
+      <h1 class="text-blue-600 text-xl font-bold text-center mb-4">
+        اطلاعات آب و هوا
+      </h1>
+
+      <div class="flex items-center space-x-2 rtl:space-x-reverse">
+        <input
+          id="search"
+          type="text"
+          placeholder="نام شهر را وارد کنید..."
+          class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <button
+          id="btn"
+          type="submit"
+          class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md"
+        >
+          جستجو
+        </button>
+      </div>
+
+      <p class="text-gray-500 mt-4">شهر پیدا نشد. لطفاً دوباره تلاش کنید.</p>
+
+      <div class="mt-4">
+        <h2 class="text-gray-800 font-semibold mb-2">شهرهای جستجو شده</h2>
+        <ul class="space-y-2">
+          <li class="bg-gray-100 px-4 py-2 rounded-md">اصفهان</li>
+          <li class="bg-gray-100 px-4 py-2 rounded-md">isfahan</li>
+          <li class="bg-gray-100 px-4 py-2 rounded-md">ترکیه</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script
+    type="module"
+    src="/main.js"
+  ></script>
+</html>
